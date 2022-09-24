@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="shortcut icon" type="image/png" href="./assets/imgs/favicon/favicon.png"/>
+    <link rel="stylesheet" href="./assets/css/musicPlayer.css" type="text/css">
+    <script type="module" src="./assets/js/musicPlayer.js" defer></script>
+    <title>Music Player</title>
+</head>
+<body>
+    
+    <div id="music-player">
+        <div id="song-info">
+            <!-- Song name -->
+            <div id="song-name" class="song-name">
+                Loading...
+            </div>
+            <!-- Song CD -->
+            <div class="song-cd">
+                <div id="song-cd" class="cd"></div>
+            </div>
+            <!-- Song control -->
+            <div class="song-control">
+                <div id="repeat-btn" class="btn-style" title="Lặp bài hiện tại"><i class="fas fa-redo"></i></div>
+                <div id="prev-btn" class="btn-style" title="Bài trước đó"><i class="fas fa-step-backward"></i></div>
+                <div id="play-btn" title="Phát / Tạm dừng"><i class="fas fa-play"></i><div id="waiting"></div></div>
+                <div id="next-btn" class="btn-style" title="Bài tiếp theo"><i class="fas fa-step-forward"></i></div>
+                <div id="random-btn" class="btn-style" title="Phát ngẫu nhiên"><i class="fas fa-random"></i></div>
+            </div>
+            <div class="song-progress">
+                <div id="current-time">00:00</div>
+                <div class="progress-bar">
+                    <!-- Progress Pseudo-->
+                    <div id="progress-bar">
+                        <div id="progress-bar-pseudo">
+                            <div id="progress-dot"></div>
+                        </div> 
+                    </div>
+
+                    <input name="song-progress" type="range" min="0" max="100" value="50" step="0.1">
+                </div>
+                <div id="total-time">00:00</div>
+            </div>
+        </div>
+
+        <div id="song-list">
+
+            <!-- Song is render here -->
+            
+            <div id="no-song">
+                <div>
+                    <div class="icon-load">
+                        <div class="icon-loading">
+                            <div class="icon-item"></div>
+                            <div class="icon-item"></div>
+                            <div class="icon-item"></div>
+                            <div class="icon-item"></div>
+                            <div class="icon-item"></div>
+                            <div class="icon-item"></div>
+                            <div class="icon-item"></div>
+                            <div class="icon-item"></div>
+                        </div>
+                    </div>
+                    <h4 class="title-load">Đang cập nhật bài hát...</h4>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- <audio id="audio" src=""></audio> -->
+            
+    </div>
+    <script>
+        
+    </script>
+</body>
+</html>
